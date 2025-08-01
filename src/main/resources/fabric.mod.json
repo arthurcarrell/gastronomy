@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "gastronomy",
+  "version": "${version}",
+  "name": "gastronomy",
+  "description": "A mod that overhauls cooking and food!",
+  "authors": [],
+  "contact": {},
+  "license": "GPL-3.0",
+  "icon": "assets/gastronomy/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.asteristired.gastronomy.client.GastronomyDataGenerator"
+    ],
+    "client": [
+      "com.asteristired.gastronomy.client.GastronomyClient"
+    ],
+    "main": [
+      "com.asteristired.gastronomy.Gastronomy"
+    ]
+  },
+  "mixins": [
+    "gastronomy.mixins.json",
+    {
+      "config": "gastronomy.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

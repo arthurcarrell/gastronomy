@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "water=false": { "model": "gastronomy:block/cooking_pot" },
+    "water=true": { "model": "gastronomy:block/cooking_pot_water" }
+  }
+}

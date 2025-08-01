@@ -1,0 +1,53 @@
+{
+  "parent": "item/generated",
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1
+      },
+      "model": "gastronomy:item/assorted_goods"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 2
+      },
+      "model": "gastronomy:item/fish_meuniere"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3
+      },
+      "model": "gastronomy:item/fish_skewer"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 4
+      },
+      "model": "gastronomy:item/golden_delights"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 5
+      },
+      "model": "gastronomy:item/golden_souffle"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 6
+      },
+      "model": "gastronomy:item/meat_gourmet"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7
+      },
+      "model": "gastronomy:item/meat_skewer"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 8
+      },
+      "model": "gastronomy:item/steamed_fruits"
+    }
+  ]
+}
