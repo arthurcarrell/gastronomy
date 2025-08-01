@@ -10,8 +10,6 @@ import net.minecraft.util.Identifier;
 public class Gastronomy implements ModInitializer {
 
     public static final String MOD_ID = "gastronomy";
-
-    public static int debugOffset = 91;
     @Override
     public void onInitialize() {
         ModBlockEntities.Initalise();

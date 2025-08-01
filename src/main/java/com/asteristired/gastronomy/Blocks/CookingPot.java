@@ -72,16 +72,17 @@ public class CookingPot extends BlockWithEntity {
                         ItemStack handStack = player.getStackInHand(hand);
                         handStack.decrement(1);
                         player.setStackInHand(hand, handStack);
-                        world.playSound(null, pos, SoundEvents.ENTITY_GENERIC_BURN, SoundCategory.PLAYERS);
                     }
                     return ActionResult.CONSUME;
                 } else { // cooking pot is full, either cook or spit items out
                     if (world.getBlockState(pos.down(1)).isIn(ModTags.COOKING_POT_WARMERS)) {
                         cookingPotBlockEntity.CreateFoodItem();
+                        world.playSound(null, pos, SoundEvents.ENTITY_GENERIC_BURN, SoundCategory.PLAYERS);
                         return ActionResult.SUCCESS;
                     } else {
                         // spit out all four items.
                         cookingPotBlockEntity.spitItems();
+                        world.playSound(null, pos, SoundEvents.ENTITY_GENERIC_BURN, SoundCategory.PLAYERS);
                     }
                 }
             }

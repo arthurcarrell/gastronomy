@@ -45,7 +45,7 @@ public class CookedFood extends Item {
         }
 
         if (nbt.getBoolean("stuffed")) {
-            user.addStatusEffect(new StatusEffectInstance(ModStatusEffects.STUFFED, 2400) );
+            user.addStatusEffect(new StatusEffectInstance(ModStatusEffects.STUFFED, 2400, 0, false, false, true));
         }
 
         return super.finishUsing(stack, world, user);
@@ -67,7 +67,7 @@ public class CookedFood extends Item {
             tooltip.add(Text.literal("♥ x " + bonus_hearts).formatted(Formatting.YELLOW));
         }
         if (isStuffedBuff) {
-            tooltip.add(Text.literal("\uD83E\uDD55+").formatted(Formatting.YELLOW));
+            tooltip.add(Text.literal("⭐").formatted(Formatting.YELLOW));
         }
 
         tooltip.add(Text.literal("\uD83C\uDF56 x " + nbt.getInt("hunger")).formatted(Formatting.RED));

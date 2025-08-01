@@ -16,7 +16,7 @@ import static com.asteristired.gastronomy.Gastronomy.MOD_ID;
 
 public class ModBlocks {
     public static Block COOKING_POT = Register(new CookingPot(AbstractBlock.Settings.create().nonOpaque().strength(0.5f)), "cooking_pot");
-    public static BlockItem COOKING_POT_ITEM = Register(new BlockItem(COOKING_POT, new Item.Settings().rarity(Rarity.UNCOMMON)), "cooking_pot");
+    public static BlockItem COOKING_POT_ITEM = Register(new BlockItem(COOKING_POT, new Item.Settings()), "cooking_pot");
 
     public static Block Register(Block block, String id) {
         return Registry.register(Registries.BLOCK, Identifier.of(MOD_ID, id), block);

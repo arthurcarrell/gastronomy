@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "iSi",
+    " i "
+  ],
+  "key": {
+    "i": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "minecraft:smoker"
+    }
+  },
+  "result": {
+    "item": "gastronomy:cooking_pot",
+    "count": 1
+  }
+}
